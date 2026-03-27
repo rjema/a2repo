@@ -1,0 +1,925 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<pnml xmlns="http://www.informatik.hu-berlin.de/top/pnml/ptNetb">
+  <declaration>
+    <structure>
+      <declarations>
+        <namedsort id="dot" name="dot">
+          <dot/>
+        </namedsort>
+      </declarations>
+    </structure>
+  </declaration>
+  <net active="true" id="TAPN1" type="P/T net">
+    <place displayName="true" id="FREE_SLOTS" initialMarking="3" invariant="&lt; inf" name="FREE_SLOTS" nameOffsetX="49" nameOffsetY="48" positionX="315" positionY="105">
+      <type>
+        <text>dot</text>
+        <structure>
+          <usersort declaration="dot"/>
+        </structure>
+      </type>
+      <hlinitialMarking>
+        <text>3'dot</text>
+        <structure>
+          <add>
+            <subterm>
+              <numberof>
+                <subterm>
+                  <numberconstant value="3">
+                    <positive/>
+                  </numberconstant>
+                </subterm>
+                <subterm>
+                  <useroperator declaration="dot"/>
+                </subterm>
+              </numberof>
+            </subterm>
+          </add>
+        </structure>
+      </hlinitialMarking>
+    </place>
+    <place displayName="true" id="REG_BATCH_GENERATOR" initialMarking="1" invariant="&lt; inf" name="REG_BATCH_GENERATOR" nameOffsetX="-4" nameOffsetY="18" positionX="210" positionY="105">
+      <type>
+        <text>dot</text>
+        <structure>
+          <usersort declaration="dot"/>
+        </structure>
+      </type>
+      <hlinitialMarking>
+        <text>1'dot</text>
+        <structure>
+          <add>
+            <subterm>
+              <numberof>
+                <subterm>
+                  <numberconstant value="1">
+                    <positive/>
+                  </numberconstant>
+                </subterm>
+                <subterm>
+                  <useroperator declaration="dot"/>
+                </subterm>
+              </numberof>
+            </subterm>
+          </add>
+        </structure>
+      </hlinitialMarking>
+    </place>
+    <place displayName="true" id="REG_BUFFER" initialMarking="0" invariant="&lt; inf" name="REG_BUFFER" nameOffsetX="-2" nameOffsetY="21" positionX="210" positionY="210">
+      <type>
+        <text>dot</text>
+        <structure>
+          <usersort declaration="dot"/>
+        </structure>
+      </type>
+    </place>
+    <place displayName="true" id="VALIDATION_SERVICE" initialMarking="1" invariant="&lt; inf" name="VALIDATION_SERVICE" nameOffsetX="65" nameOffsetY="-10" positionX="315" positionY="195">
+      <type>
+        <text>dot</text>
+        <structure>
+          <usersort declaration="dot"/>
+        </structure>
+      </type>
+      <hlinitialMarking>
+        <text>1'dot</text>
+        <structure>
+          <add>
+            <subterm>
+              <numberof>
+                <subterm>
+                  <numberconstant value="1">
+                    <positive/>
+                  </numberconstant>
+                </subterm>
+                <subterm>
+                  <useroperator declaration="dot"/>
+                </subterm>
+              </numberof>
+            </subterm>
+          </add>
+        </structure>
+      </hlinitialMarking>
+    </place>
+    <place displayName="true" id="VALIDATED_REG" initialMarking="0" invariant="&lt; inf" name="VALIDATED_REG" nameOffsetX="0" nameOffsetY="17" positionX="210" positionY="300">
+      <type>
+        <text>dot</text>
+        <structure>
+          <usersort declaration="dot"/>
+        </structure>
+      </type>
+    </place>
+    <place displayName="true" id="DEPLOYMENT_MANAGER" initialMarking="1" invariant="&lt; inf" name="DEPLOYMENT_MANAGER" nameOffsetX="80" nameOffsetY="-13" positionX="315" positionY="285">
+      <type>
+        <text>dot</text>
+        <structure>
+          <usersort declaration="dot"/>
+        </structure>
+      </type>
+      <hlinitialMarking>
+        <text>1'dot</text>
+        <structure>
+          <add>
+            <subterm>
+              <numberof>
+                <subterm>
+                  <numberconstant value="1">
+                    <positive/>
+                  </numberconstant>
+                </subterm>
+                <subterm>
+                  <useroperator declaration="dot"/>
+                </subterm>
+              </numberof>
+            </subterm>
+          </add>
+        </structure>
+      </hlinitialMarking>
+    </place>
+    <place displayName="true" id="WORKERS" initialMarking="2" invariant="&lt; inf" name="WORKERS" nameOffsetX="42" nameOffsetY="-18" positionX="315" positionY="450">
+      <type>
+        <text>dot</text>
+        <structure>
+          <usersort declaration="dot"/>
+        </structure>
+      </type>
+      <hlinitialMarking>
+        <text>2'dot</text>
+        <structure>
+          <add>
+            <subterm>
+              <numberof>
+                <subterm>
+                  <numberconstant value="2">
+                    <positive/>
+                  </numberconstant>
+                </subterm>
+                <subterm>
+                  <useroperator declaration="dot"/>
+                </subterm>
+              </numberof>
+            </subterm>
+          </add>
+        </structure>
+      </hlinitialMarking>
+    </place>
+    <place displayName="true" id="DEPLOYING_REG" initialMarking="0" invariant="&lt; inf" name="DEPLOYING_REG" nameOffsetX="-2" nameOffsetY="13" positionX="210" positionY="420">
+      <type>
+        <text>dot</text>
+        <structure>
+          <usersort declaration="dot"/>
+        </structure>
+      </type>
+    </place>
+    <place displayName="true" id="CRIT_BATCH_GENERATOR" initialMarking="1" invariant="&lt; inf" name="CRIT_BATCH_GENERATOR" nameOffsetX="175" nameOffsetY="15" positionX="405" positionY="105">
+      <type>
+        <text>dot</text>
+        <structure>
+          <usersort declaration="dot"/>
+        </structure>
+      </type>
+      <hlinitialMarking>
+        <text>1'dot</text>
+        <structure>
+          <add>
+            <subterm>
+              <numberof>
+                <subterm>
+                  <numberconstant value="1">
+                    <positive/>
+                  </numberconstant>
+                </subterm>
+                <subterm>
+                  <useroperator declaration="dot"/>
+                </subterm>
+              </numberof>
+            </subterm>
+          </add>
+        </structure>
+      </hlinitialMarking>
+    </place>
+    <place displayName="true" id="CRIT_BUFFER" initialMarking="0" invariant="&lt; inf" name="CRIT_BUFFER" nameOffsetX="113" nameOffsetY="11" positionX="405" positionY="210">
+      <type>
+        <text>dot</text>
+        <structure>
+          <usersort declaration="dot"/>
+        </structure>
+      </type>
+    </place>
+    <place displayName="true" id="VALIDATED_CRIT" initialMarking="0" invariant="&lt; inf" name="VALIDATED_CRIT" nameOffsetX="119" nameOffsetY="14" positionX="405" positionY="300">
+      <type>
+        <text>dot</text>
+        <structure>
+          <usersort declaration="dot"/>
+        </structure>
+      </type>
+    </place>
+    <place displayName="true" id="DEPLOYING_CRIT" initialMarking="0" invariant="&lt; inf" name="DEPLOYING_CRIT" nameOffsetX="132" nameOffsetY="16" positionX="405" positionY="420">
+      <type>
+        <text>dot</text>
+        <structure>
+          <usersort declaration="dot"/>
+        </structure>
+      </type>
+    </place>
+    <transition angle="90" displayName="true" distribution="constant" firingMode="Oldest" id="submit_reg" infiniteServer="false" name="submit_reg" nameOffsetX="-10" nameOffsetY="14" player="0" positionX="210" positionY="165" priority="0" urgent="false" value="1.0" weight="1.0"/>
+    <transition angle="90" displayName="true" distribution="constant" firingMode="Oldest" id="check_package_reg" infiniteServer="false" name="check_package_reg" nameOffsetX="-5" nameOffsetY="18" player="0" positionX="210" positionY="255" priority="0" urgent="false" value="1.0" weight="1.0"/>
+    <transition angle="90" displayName="true" distribution="constant" firingMode="Oldest" id="dispatch_reg" infiniteServer="false" name="dispatch_reg" nameOffsetX="2" nameOffsetY="16" player="0" positionX="210" positionY="360" priority="0" urgent="false" value="1.0" weight="1.0"/>
+    <transition angle="90" displayName="true" distribution="constant" firingMode="Oldest" id="finish_reg" infiniteServer="false" name="finish_reg" nameOffsetX="29" nameOffsetY="30" player="0" positionX="210" positionY="465" priority="0" urgent="false" value="1.0" weight="1.0"/>
+    <transition angle="90" displayName="true" distribution="constant" firingMode="Oldest" id="submit_crit" infiniteServer="false" name="submit_crit" nameOffsetX="90" nameOffsetY="17" player="0" positionX="405" positionY="165" priority="0" urgent="false" value="1.0" weight="1.0"/>
+    <transition angle="90" displayName="true" distribution="constant" firingMode="Oldest" id="check_package_crit" infiniteServer="false" name="check_package_crit" nameOffsetX="135" nameOffsetY="12" player="0" positionX="405" positionY="255" priority="0" urgent="false" value="1.0" weight="1.0"/>
+    <transition angle="90" displayName="true" distribution="constant" firingMode="Oldest" id="dispatch_crit" infiniteServer="false" name="dispatch_crit" nameOffsetX="101" nameOffsetY="14" player="0" positionX="405" positionY="360" priority="0" urgent="false" value="1.0" weight="1.0"/>
+    <transition angle="90" displayName="true" distribution="constant" firingMode="Oldest" id="finish_crit" infiniteServer="false" name="finish_crit" nameOffsetX="24" nameOffsetY="29" player="0" positionX="405" positionY="465" priority="0" urgent="false" value="1.0" weight="1.0"/>
+    <arc id="A4" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="DEPLOYING_REG" target="finish_reg" type="timed" weight="1">
+      <hlinscription>
+        <text>1'dot</text>
+        <structure>
+          <numberof>
+            <subterm>
+              <numberconstant value="1">
+                <positive/>
+              </numberconstant>
+            </subterm>
+            <subterm>
+              <useroperator declaration="dot"/>
+            </subterm>
+          </numberof>
+        </structure>
+      </hlinscription>
+      <arcpath arcPointType="false" id="0" xCoord="225" yCoord="450"/>
+      <arcpath arcPointType="false" id="1" xCoord="224" yCoord="475"/>
+    </arc>
+    <arc id="A2" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="FREE_SLOTS" target="submit_crit" type="timed" weight="1">
+      <hlinscription>
+        <text>1'dot</text>
+        <structure>
+          <numberof>
+            <subterm>
+              <numberconstant value="1">
+                <positive/>
+              </numberconstant>
+            </subterm>
+            <subterm>
+              <useroperator declaration="dot"/>
+            </subterm>
+          </numberof>
+        </structure>
+      </hlinscription>
+      <arcpath arcPointType="false" id="0" xCoord="343" yCoord="129"/>
+      <arcpath arcPointType="false" id="1" xCoord="411" yCoord="174"/>
+    </arc>
+    <arc id="A3" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="FREE_SLOTS" target="submit_reg" type="timed" weight="1">
+      <hlinscription>
+        <text>1'dot</text>
+        <structure>
+          <numberof>
+            <subterm>
+              <numberconstant value="1">
+                <positive/>
+              </numberconstant>
+            </subterm>
+            <subterm>
+              <useroperator declaration="dot"/>
+            </subterm>
+          </numberof>
+        </structure>
+      </hlinscription>
+      <arcpath arcPointType="false" id="0" xCoord="318" yCoord="129"/>
+      <arcpath arcPointType="false" id="1" xCoord="240" yCoord="180"/>
+    </arc>
+    <arc id="A5" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="REG_BATCH_GENERATOR" target="submit_reg" type="timed" weight="1">
+      <hlinscription>
+        <text>1'dot</text>
+        <structure>
+          <numberof>
+            <subterm>
+              <numberconstant value="1">
+                <positive/>
+              </numberconstant>
+            </subterm>
+            <subterm>
+              <useroperator declaration="dot"/>
+            </subterm>
+          </numberof>
+        </structure>
+      </hlinscription>
+      <arcpath arcPointType="false" id="0" xCoord="226" yCoord="135"/>
+      <arcpath arcPointType="false" id="1" xCoord="229" yCoord="175"/>
+    </arc>
+    <arc id="A6" inscription="1" nameOffsetX="0" nameOffsetY="0" source="submit_reg" target="REG_BATCH_GENERATOR" type="normal" weight="1">
+      <hlinscription>
+        <text>1'dot</text>
+        <structure>
+          <numberof>
+            <subterm>
+              <numberconstant value="1">
+                <positive/>
+              </numberconstant>
+            </subterm>
+            <subterm>
+              <useroperator declaration="dot"/>
+            </subterm>
+          </numberof>
+        </structure>
+      </hlinscription>
+      <arcpath arcPointType="false" id="0" xCoord="219" yCoord="175"/>
+      <arcpath arcPointType="false" id="1" xCoord="180" yCoord="150"/>
+      <arcpath arcPointType="false" id="2" xCoord="212" yCoord="128"/>
+    </arc>
+    <arc id="A7" inscription="1" nameOffsetX="0" nameOffsetY="0" source="submit_crit" target="CRIT_BATCH_GENERATOR" type="normal" weight="1">
+      <hlinscription>
+        <text>1'dot</text>
+        <structure>
+          <numberof>
+            <subterm>
+              <numberconstant value="1">
+                <positive/>
+              </numberconstant>
+            </subterm>
+            <subterm>
+              <useroperator declaration="dot"/>
+            </subterm>
+          </numberof>
+        </structure>
+      </hlinscription>
+      <arcpath arcPointType="false" id="0" xCoord="425" yCoord="175"/>
+      <arcpath arcPointType="false" id="1" xCoord="465" yCoord="150"/>
+      <arcpath arcPointType="false" id="2" xCoord="433" yCoord="128"/>
+    </arc>
+    <arc id="A8" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="CRIT_BATCH_GENERATOR" target="submit_crit" type="timed" weight="1">
+      <hlinscription>
+        <text>1'dot</text>
+        <structure>
+          <numberof>
+            <subterm>
+              <numberconstant value="1">
+                <positive/>
+              </numberconstant>
+            </subterm>
+            <subterm>
+              <useroperator declaration="dot"/>
+            </subterm>
+          </numberof>
+        </structure>
+      </hlinscription>
+      <arcpath arcPointType="false" id="0" xCoord="420" yCoord="135"/>
+      <arcpath arcPointType="false" id="1" xCoord="419" yCoord="175"/>
+    </arc>
+    <arc id="A9" inscription="1" nameOffsetX="0" nameOffsetY="0" source="submit_reg" target="REG_BUFFER" type="normal" weight="1">
+      <hlinscription>
+        <text>1'dot</text>
+        <structure>
+          <numberof>
+            <subterm>
+              <numberconstant value="1">
+                <positive/>
+              </numberconstant>
+            </subterm>
+            <subterm>
+              <useroperator declaration="dot"/>
+            </subterm>
+          </numberof>
+        </structure>
+      </hlinscription>
+      <arcpath arcPointType="false" id="0" xCoord="225" yCoord="185"/>
+      <arcpath arcPointType="false" id="1" xCoord="226" yCoord="210"/>
+    </arc>
+    <arc id="A10" inscription="1" nameOffsetX="0" nameOffsetY="0" source="submit_crit" target="CRIT_BUFFER" type="normal" weight="1">
+      <hlinscription>
+        <text>1'dot</text>
+        <structure>
+          <numberof>
+            <subterm>
+              <numberconstant value="1">
+                <positive/>
+              </numberconstant>
+            </subterm>
+            <subterm>
+              <useroperator declaration="dot"/>
+            </subterm>
+          </numberof>
+        </structure>
+      </hlinscription>
+      <arcpath arcPointType="false" id="0" xCoord="420" yCoord="185"/>
+      <arcpath arcPointType="false" id="1" xCoord="421" yCoord="210"/>
+    </arc>
+    <arc id="A11" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="REG_BUFFER" target="check_package_reg" type="timed" weight="1">
+      <hlinscription>
+        <text>1'dot</text>
+        <structure>
+          <numberof>
+            <subterm>
+              <numberconstant value="1">
+                <positive/>
+              </numberconstant>
+            </subterm>
+            <subterm>
+              <useroperator declaration="dot"/>
+            </subterm>
+          </numberof>
+        </structure>
+      </hlinscription>
+      <arcpath arcPointType="false" id="0" xCoord="225" yCoord="240"/>
+      <arcpath arcPointType="false" id="1" xCoord="224" yCoord="265"/>
+    </arc>
+    <arc id="A12" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="CRIT_BUFFER" target="check_package_crit" type="timed" weight="1">
+      <hlinscription>
+        <text>1'dot</text>
+        <structure>
+          <numberof>
+            <subterm>
+              <numberconstant value="1">
+                <positive/>
+              </numberconstant>
+            </subterm>
+            <subterm>
+              <useroperator declaration="dot"/>
+            </subterm>
+          </numberof>
+        </structure>
+      </hlinscription>
+      <arcpath arcPointType="false" id="0" xCoord="422" yCoord="240"/>
+      <arcpath arcPointType="false" id="1" xCoord="424" yCoord="265"/>
+    </arc>
+    <arc id="A14" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="VALIDATION_SERVICE" target="check_package_crit" type="timed" weight="1">
+      <hlinscription>
+        <text>1'dot</text>
+        <structure>
+          <numberof>
+            <subterm>
+              <numberconstant value="1">
+                <positive/>
+              </numberconstant>
+            </subterm>
+            <subterm>
+              <useroperator declaration="dot"/>
+            </subterm>
+          </numberof>
+        </structure>
+      </hlinscription>
+      <arcpath arcPointType="false" id="0" xCoord="343" yCoord="218"/>
+      <arcpath arcPointType="false" id="1" xCoord="414" yCoord="265"/>
+    </arc>
+    <arc id="A15" inscription="1" nameOffsetX="0" nameOffsetY="0" source="check_package_reg" target="VALIDATION_SERVICE" type="normal" weight="1">
+      <hlinscription>
+        <text>1'dot</text>
+        <structure>
+          <numberof>
+            <subterm>
+              <numberconstant value="1">
+                <positive/>
+              </numberconstant>
+            </subterm>
+            <subterm>
+              <useroperator declaration="dot"/>
+            </subterm>
+          </numberof>
+        </structure>
+      </hlinscription>
+      <arcpath arcPointType="false" id="0" xCoord="240" yCoord="270"/>
+      <arcpath arcPointType="false" id="1" xCoord="315" yCoord="240"/>
+      <arcpath arcPointType="false" id="2" xCoord="322" yCoord="223"/>
+    </arc>
+    <arc id="A16" inscription="1" nameOffsetX="0" nameOffsetY="0" source="check_package_crit" target="VALIDATION_SERVICE" type="normal" weight="1">
+      <hlinscription>
+        <text>1'dot</text>
+        <structure>
+          <numberof>
+            <subterm>
+              <numberconstant value="1">
+                <positive/>
+              </numberconstant>
+            </subterm>
+            <subterm>
+              <useroperator declaration="dot"/>
+            </subterm>
+          </numberof>
+        </structure>
+      </hlinscription>
+      <arcpath arcPointType="false" id="0" xCoord="405" yCoord="270"/>
+      <arcpath arcPointType="false" id="1" xCoord="345" yCoord="240"/>
+      <arcpath arcPointType="false" id="2" xCoord="336" yCoord="224"/>
+    </arc>
+    <arc id="A17" inscription="1" nameOffsetX="0" nameOffsetY="0" source="check_package_reg" target="VALIDATED_REG" type="normal" weight="1">
+      <hlinscription>
+        <text>1'dot</text>
+        <structure>
+          <numberof>
+            <subterm>
+              <numberconstant value="1">
+                <positive/>
+              </numberconstant>
+            </subterm>
+            <subterm>
+              <useroperator declaration="dot"/>
+            </subterm>
+          </numberof>
+        </structure>
+      </hlinscription>
+      <arcpath arcPointType="false" id="0" xCoord="225" yCoord="275"/>
+      <arcpath arcPointType="false" id="1" xCoord="226" yCoord="300"/>
+    </arc>
+    <arc id="A18" inscription="1" nameOffsetX="0" nameOffsetY="0" source="check_package_crit" target="VALIDATED_CRIT" type="normal" weight="1">
+      <hlinscription>
+        <text>1'dot</text>
+        <structure>
+          <numberof>
+            <subterm>
+              <numberconstant value="1">
+                <positive/>
+              </numberconstant>
+            </subterm>
+            <subterm>
+              <useroperator declaration="dot"/>
+            </subterm>
+          </numberof>
+        </structure>
+      </hlinscription>
+      <arcpath arcPointType="false" id="0" xCoord="420" yCoord="275"/>
+      <arcpath arcPointType="false" id="1" xCoord="421" yCoord="300"/>
+    </arc>
+    <arc id="A19" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="VALIDATED_REG" target="dispatch_reg" type="timed" weight="1">
+      <hlinscription>
+        <text>1'dot</text>
+        <structure>
+          <numberof>
+            <subterm>
+              <numberconstant value="1">
+                <positive/>
+              </numberconstant>
+            </subterm>
+            <subterm>
+              <useroperator declaration="dot"/>
+            </subterm>
+          </numberof>
+        </structure>
+      </hlinscription>
+      <arcpath arcPointType="false" id="0" xCoord="224" yCoord="330"/>
+      <arcpath arcPointType="false" id="1" xCoord="219" yCoord="370"/>
+    </arc>
+    <arc id="A20" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="DEPLOYMENT_MANAGER" target="dispatch_reg" type="timed" weight="1">
+      <hlinscription>
+        <text>1'dot</text>
+        <structure>
+          <numberof>
+            <subterm>
+              <numberconstant value="1">
+                <positive/>
+              </numberconstant>
+            </subterm>
+            <subterm>
+              <useroperator declaration="dot"/>
+            </subterm>
+          </numberof>
+        </structure>
+      </hlinscription>
+      <arcpath arcPointType="false" id="0" xCoord="318" yCoord="309"/>
+      <arcpath arcPointType="false" id="1" xCoord="229" yCoord="370"/>
+    </arc>
+    <arc id="A21" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="VALIDATED_CRIT" target="dispatch_crit" type="timed" weight="1">
+      <hlinscription>
+        <text>1'dot</text>
+        <structure>
+          <numberof>
+            <subterm>
+              <numberconstant value="1">
+                <positive/>
+              </numberconstant>
+            </subterm>
+            <subterm>
+              <useroperator declaration="dot"/>
+            </subterm>
+          </numberof>
+        </structure>
+      </hlinscription>
+      <arcpath arcPointType="false" id="0" xCoord="421" yCoord="330"/>
+      <arcpath arcPointType="false" id="1" xCoord="425" yCoord="370"/>
+    </arc>
+    <arc id="A22" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="DEPLOYMENT_MANAGER" target="dispatch_crit" type="timed" weight="1">
+      <hlinscription>
+        <text>1'dot</text>
+        <structure>
+          <numberof>
+            <subterm>
+              <numberconstant value="1">
+                <positive/>
+              </numberconstant>
+            </subterm>
+            <subterm>
+              <useroperator declaration="dot"/>
+            </subterm>
+          </numberof>
+        </structure>
+      </hlinscription>
+      <arcpath arcPointType="false" id="0" xCoord="342" yCoord="309"/>
+      <arcpath arcPointType="false" id="1" xCoord="419" yCoord="370"/>
+    </arc>
+    <arc id="A23" inscription="1" nameOffsetX="0" nameOffsetY="0" source="dispatch_reg" target="DEPLOYMENT_MANAGER" type="normal" weight="1">
+      <hlinscription>
+        <text>1'dot</text>
+        <structure>
+          <numberof>
+            <subterm>
+              <numberconstant value="1">
+                <positive/>
+              </numberconstant>
+            </subterm>
+            <subterm>
+              <useroperator declaration="dot"/>
+            </subterm>
+          </numberof>
+        </structure>
+      </hlinscription>
+      <arcpath arcPointType="false" id="0" xCoord="240" yCoord="375"/>
+      <arcpath arcPointType="false" id="1" xCoord="315" yCoord="330"/>
+      <arcpath arcPointType="false" id="2" xCoord="322" yCoord="313"/>
+    </arc>
+    <arc id="A24" inscription="1" nameOffsetX="0" nameOffsetY="0" source="dispatch_crit" target="DEPLOYMENT_MANAGER" type="normal" weight="1">
+      <hlinscription>
+        <text>1'dot</text>
+        <structure>
+          <numberof>
+            <subterm>
+              <numberconstant value="1">
+                <positive/>
+              </numberconstant>
+            </subterm>
+            <subterm>
+              <useroperator declaration="dot"/>
+            </subterm>
+          </numberof>
+        </structure>
+      </hlinscription>
+      <arcpath arcPointType="false" id="0" xCoord="411" yCoord="369"/>
+      <arcpath arcPointType="false" id="1" xCoord="345" yCoord="330"/>
+      <arcpath arcPointType="false" id="2" xCoord="336" yCoord="314"/>
+    </arc>
+    <arc id="A25" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="WORKERS" target="dispatch_reg" type="timed" weight="1">
+      <hlinscription>
+        <text>1'dot</text>
+        <structure>
+          <numberof>
+            <subterm>
+              <numberconstant value="1">
+                <positive/>
+              </numberconstant>
+            </subterm>
+            <subterm>
+              <useroperator declaration="dot"/>
+            </subterm>
+          </numberof>
+        </structure>
+      </hlinscription>
+      <arcpath arcPointType="false" id="0" xCoord="319" yCoord="455"/>
+      <arcpath arcPointType="false" id="1" xCoord="230" yCoord="380"/>
+    </arc>
+    <arc id="A26" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="WORKERS" target="dispatch_crit" type="timed" weight="1">
+      <hlinscription>
+        <text>1'dot</text>
+        <structure>
+          <numberof>
+            <subterm>
+              <numberconstant value="1">
+                <positive/>
+              </numberconstant>
+            </subterm>
+            <subterm>
+              <useroperator declaration="dot"/>
+            </subterm>
+          </numberof>
+        </structure>
+      </hlinscription>
+      <arcpath arcPointType="false" id="0" xCoord="341" yCoord="454"/>
+      <arcpath arcPointType="false" id="1" xCoord="415" yCoord="380"/>
+    </arc>
+    <arc id="A27" inscription="1" nameOffsetX="0" nameOffsetY="0" source="dispatch_reg" target="DEPLOYING_REG" type="normal" weight="1">
+      <hlinscription>
+        <text>1'dot</text>
+        <structure>
+          <numberof>
+            <subterm>
+              <numberconstant value="1">
+                <positive/>
+              </numberconstant>
+            </subterm>
+            <subterm>
+              <useroperator declaration="dot"/>
+            </subterm>
+          </numberof>
+        </structure>
+      </hlinscription>
+      <arcpath arcPointType="false" id="0" xCoord="220" yCoord="380"/>
+      <arcpath arcPointType="false" id="1" xCoord="224" yCoord="420"/>
+    </arc>
+    <arc id="I25" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="VALIDATED_CRIT" target="dispatch_reg" type="tapnInhibitor" weight="1">
+      <arcpath arcPointType="false" id="0" xCoord="406" yCoord="320"/>
+      <arcpath arcPointType="false" id="1" xCoord="240" yCoord="375"/>
+    </arc>
+    <arc id="A31" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="VALIDATION_SERVICE" target="check_package_reg" type="timed" weight="1">
+      <hlinscription>
+        <text>1'dot</text>
+        <structure>
+          <numberof>
+            <subterm>
+              <numberconstant value="1">
+                <positive/>
+              </numberconstant>
+            </subterm>
+            <subterm>
+              <useroperator declaration="dot"/>
+            </subterm>
+          </numberof>
+        </structure>
+      </hlinscription>
+      <arcpath arcPointType="false" id="0" xCoord="318" yCoord="219"/>
+      <arcpath arcPointType="false" id="1" xCoord="240" yCoord="270"/>
+    </arc>
+    <arc id="A28" inscription="1" nameOffsetX="0" nameOffsetY="0" source="finish_reg" target="FREE_SLOTS" type="normal" weight="1">
+      <hlinscription>
+        <text>1'dot</text>
+        <structure>
+          <numberof>
+            <subterm>
+              <numberconstant value="1">
+                <positive/>
+              </numberconstant>
+            </subterm>
+            <subterm>
+              <useroperator declaration="dot"/>
+            </subterm>
+          </numberof>
+        </structure>
+      </hlinscription>
+      <arcpath arcPointType="false" id="0" xCoord="210" yCoord="480"/>
+      <arcpath arcPointType="false" id="1" xCoord="30" yCoord="480"/>
+      <arcpath arcPointType="false" id="2" xCoord="30" yCoord="90"/>
+      <arcpath arcPointType="false" id="3" xCoord="315" yCoord="90"/>
+      <arcpath arcPointType="false" id="4" xCoord="321" yCoord="108"/>
+    </arc>
+    <arc id="A29" inscription="1" nameOffsetX="0" nameOffsetY="0" source="finish_reg" target="WORKERS" type="normal" weight="1">
+      <hlinscription>
+        <text>1'dot</text>
+        <structure>
+          <numberof>
+            <subterm>
+              <numberconstant value="1">
+                <positive/>
+              </numberconstant>
+            </subterm>
+            <subterm>
+              <useroperator declaration="dot"/>
+            </subterm>
+          </numberof>
+        </structure>
+      </hlinscription>
+      <arcpath arcPointType="false" id="0" xCoord="240" yCoord="480"/>
+      <arcpath arcPointType="false" id="1" xCoord="315" yCoord="468"/>
+    </arc>
+    <arc id="A30" inscription="[0,inf)" nameOffsetX="0" nameOffsetY="0" source="DEPLOYING_CRIT" target="finish_crit" type="timed" weight="1">
+      <hlinscription>
+        <text>1'dot</text>
+        <structure>
+          <numberof>
+            <subterm>
+              <numberconstant value="1">
+                <positive/>
+              </numberconstant>
+            </subterm>
+            <subterm>
+              <useroperator declaration="dot"/>
+            </subterm>
+          </numberof>
+        </structure>
+      </hlinscription>
+      <arcpath arcPointType="false" id="0" xCoord="420" yCoord="450"/>
+      <arcpath arcPointType="false" id="1" xCoord="419" yCoord="475"/>
+    </arc>
+    <arc id="A32" inscription="1" nameOffsetX="0" nameOffsetY="0" source="dispatch_crit" target="DEPLOYING_CRIT" type="normal" weight="1">
+      <hlinscription>
+        <text>1'dot</text>
+        <structure>
+          <numberof>
+            <subterm>
+              <numberconstant value="1">
+                <positive/>
+              </numberconstant>
+            </subterm>
+            <subterm>
+              <useroperator declaration="dot"/>
+            </subterm>
+          </numberof>
+        </structure>
+      </hlinscription>
+      <arcpath arcPointType="false" id="0" xCoord="425" yCoord="380"/>
+      <arcpath arcPointType="false" id="1" xCoord="421" yCoord="420"/>
+    </arc>
+    <arc id="A33" inscription="1" nameOffsetX="0" nameOffsetY="0" source="finish_crit" target="WORKERS" type="normal" weight="1">
+      <hlinscription>
+        <text>1'dot</text>
+        <structure>
+          <numberof>
+            <subterm>
+              <numberconstant value="1">
+                <positive/>
+              </numberconstant>
+            </subterm>
+            <subterm>
+              <useroperator declaration="dot"/>
+            </subterm>
+          </numberof>
+        </structure>
+      </hlinscription>
+      <arcpath arcPointType="false" id="0" xCoord="405" yCoord="480"/>
+      <arcpath arcPointType="false" id="1" xCoord="345" yCoord="468"/>
+    </arc>
+    <arc id="A34" inscription="1" nameOffsetX="0" nameOffsetY="0" source="finish_crit" target="FREE_SLOTS" type="normal" weight="1">
+      <hlinscription>
+        <text>1'dot</text>
+        <structure>
+          <numberof>
+            <subterm>
+              <numberconstant value="1">
+                <positive/>
+              </numberconstant>
+            </subterm>
+            <subterm>
+              <useroperator declaration="dot"/>
+            </subterm>
+          </numberof>
+        </structure>
+      </hlinscription>
+      <arcpath arcPointType="false" id="0" xCoord="435" yCoord="480"/>
+      <arcpath arcPointType="false" id="1" xCoord="585" yCoord="480"/>
+      <arcpath arcPointType="false" id="2" xCoord="585" yCoord="90"/>
+      <arcpath arcPointType="false" id="3" xCoord="345" yCoord="90"/>
+      <arcpath arcPointType="false" id="4" xCoord="339" yCoord="108"/>
+    </arc>
+  </net>
+  <query active="true" algorithmOption="CERTAIN_ZERO" approximationDenominator="0" capacity="4" colorFixpoint="false" coloredReduction="false" discreteInclusion="false" enableOverApproximation="false" enableUnderApproximation="false" extrapolationOption="AUTOMATIC" gcd="false" hashTableSize="MB_16" inclusionPlaces="*NONE*" name="Priority enforcement" overApproximation="false" pTrie="false" partitioning="false" reduction="true" reductionOption="VerifyPN" searchOption="DFS" symmetricVars="false" symmetry="false" timeDarts="false" traceOption="NONE" type="CTL" useExplicitSearch="false" useQueryReduction="true" useSiphonTrapAnalysis="false" useStubbornReduction="true" useTarOption="false" useTarjan="true">
+    <formula>
+      <all-paths>
+        <globally>
+          <disjunction>
+            <integer-eq>
+              <tokens-count>
+                <place>TAPN1.VALIDATED_CRIT</place>
+              </tokens-count>
+              <integer-constant>0</integer-constant>
+            </integer-eq>
+            <negation>
+              <is-fireable>
+                <transition>TAPN1.dispatch_reg</transition>
+              </is-fireable>
+            </negation>
+          </disjunction>
+        </globally>
+      </all-paths>
+    </formula>
+  </query>
+  <query active="true" algorithmOption="CERTAIN_ZERO" approximationDenominator="0" capacity="4" colorFixpoint="false" coloredReduction="false" discreteInclusion="false" enableOverApproximation="false" enableUnderApproximation="false" extrapolationOption="null" gcd="false" hashTableSize="null" inclusionPlaces="*NONE*" name="Critical update progress" overApproximation="false" pTrie="false" partitioning="false" reduction="true" reductionOption="VerifyPN" searchOption="DFS" symmetricVars="false" symmetry="false" timeDarts="false" traceOption="NONE" type="CTL" useExplicitSearch="false" useQueryReduction="true" useSiphonTrapAnalysis="false" useStubbornReduction="true" useTarOption="false" useTarjan="true">
+    <formula>
+      <all-paths>
+        <globally>
+          <disjunction>
+            <negation>
+              <is-fireable>
+                <transition>TAPN1.dispatch_crit</transition>
+              </is-fireable>
+            </negation>
+            <all-paths>
+              <finally>
+                <is-fireable>
+                  <transition>TAPN1.finish_crit</transition>
+                </is-fireable>
+              </finally>
+            </all-paths>
+          </disjunction>
+        </globally>
+      </all-paths>
+    </formula>
+  </query>
+  <query active="true" algorithmOption="CERTAIN_ZERO" approximationDenominator="0" capacity="4" colorFixpoint="false" coloredReduction="false" discreteInclusion="false" enableOverApproximation="false" enableUnderApproximation="false" extrapolationOption="null" gcd="false" hashTableSize="null" inclusionPlaces="*NONE*" name="Regular update starvation" overApproximation="false" pTrie="false" partitioning="false" reduction="true" reductionOption="VerifyPN" searchOption="DFS" symmetricVars="false" symmetry="false" timeDarts="false" traceOption="NONE" type="CTL" useExplicitSearch="false" useQueryReduction="true" useSiphonTrapAnalysis="false" useStubbornReduction="true" useTarOption="false" useTarjan="true">
+    <formula>
+      <exists-path>
+        <finally>
+          <conjunction>
+            <integer-ge>
+              <tokens-count>
+                <place>TAPN1.REG_BUFFER</place>
+              </tokens-count>
+              <integer-constant>1</integer-constant>
+            </integer-ge>
+            <all-paths>
+              <globally>
+                <negation>
+                  <is-fireable>
+                    <transition>TAPN1.dispatch_reg</transition>
+                  </is-fireable>
+                </negation>
+              </globally>
+            </all-paths>
+          </conjunction>
+        </finally>
+      </exists-path>
+    </formula>
+  </query>
+  <feature isColored="false" isGame="false" isStochastic="false" isTimed="false"/>
+</pnml>
