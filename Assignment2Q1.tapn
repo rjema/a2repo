@@ -521,15 +521,13 @@
       <arcpath arcPointType="false" id="3" xCoord="90" yCoord="105"/>
     </arc>
   </net>
-  <query active="true" algorithmOption="CERTAIN_ZERO" approximationDenominator="0" capacity="4" colorFixpoint="false" coloredReduction="false" discreteInclusion="false" enableOverApproximation="false" enableUnderApproximation="false" extrapolationOption="AUTOMATIC" gcd="false" hashTableSize="MB_16" inclusionPlaces="*NONE*" name="Deadlock possibility" overApproximation="false" pTrie="false" partitioning="false" reduction="true" reductionOption="VerifyPN" searchOption="DFS" symmetricVars="false" symmetry="false" timeDarts="false" traceOption="NONE" type="CTL" useExplicitSearch="false" useQueryReduction="true" useSiphonTrapAnalysis="false" useStubbornReduction="true" useTarOption="false" useTarjan="true">
+  <query active="true" algorithmOption="CERTAIN_ZERO" approximationDenominator="0" capacity="4" colorFixpoint="false" coloredReduction="false" discreteInclusion="false" enableOverApproximation="false" enableUnderApproximation="false" extrapolationOption="null" gcd="false" hashTableSize="null" inclusionPlaces="*NONE*" name="Deadlock possibility" overApproximation="false" pTrie="false" partitioning="false" reduction="true" reductionOption="VerifyPN" searchOption="DFS" symmetricVars="false" symmetry="false" timeDarts="false" traceOption="NONE" type="CTL" useExplicitSearch="false" useQueryReduction="true" useSiphonTrapAnalysis="false" useStubbornReduction="true" useTarOption="false" useTarjan="true">
     <formula>
-      <all-paths>
-        <globally>
-          <negation>
-            <deadlock/>
-          </negation>
-        </globally>
-      </all-paths>
+      <exists-path>
+        <finally>
+          <deadlock/>
+        </finally>
+      </exists-path>
     </formula>
   </query>
   <query active="true" algorithmOption="CERTAIN_ZERO" approximationDenominator="0" capacity="4" colorFixpoint="false" coloredReduction="false" discreteInclusion="false" enableOverApproximation="false" enableUnderApproximation="false" extrapolationOption="AUTOMATIC" gcd="false" hashTableSize="MB_16" inclusionPlaces="*NONE*" name="Buffer safety" overApproximation="false" pTrie="false" partitioning="false" reduction="true" reductionOption="VerifyPN" searchOption="DFS" symmetricVars="false" symmetry="false" timeDarts="false" traceOption="NONE" type="CTL" useExplicitSearch="false" useQueryReduction="true" useSiphonTrapAnalysis="false" useStubbornReduction="true" useTarOption="false" useTarjan="true">
